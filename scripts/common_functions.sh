@@ -14,7 +14,7 @@
 # permissions and limitations under the License.
 
 # ELB_LIST defines which Elastic Load Balancers this instance should be part of.
-ELB_LIST=""
+ELB_LIST="devops-bootcam-Elb-D3RLXCCSVCJ"
 
 # Under normal circumstances, you shouldn't need to change anything below this line.
 # -----------------------------------------------------------------------------
@@ -355,7 +355,7 @@ get_elb_list() {
 
     if [ -z "$elb_list" ]; then
         return 1
-    else 
+    else
         msg "Got load balancer list of: $elb_list"
         INSTANCE_ELBS=$elb_list
         return 0
